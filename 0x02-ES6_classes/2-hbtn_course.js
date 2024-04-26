@@ -8,17 +8,17 @@ class HolbertonCourse {
   constructor(name, length, students) {
     if (typeof name !== 'string') {
       throw new TypeError('Name must be a string');
-    } this._name = name;
+    } this.name = name;
 
     if (typeof length !== 'number') {
       throw new TypeError('Length must be a number');
     }
-    this._length = length;
+    this.length = length;
 
     if (typeof students[0] !== 'string') {
       throw new TypeError('Students must be a string');
     }
-    this._students = students;
+    this.students = students;
   }
   /**
  *
