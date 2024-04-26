@@ -2,15 +2,15 @@ import Currency from './3-currency';
 /**
  * A pricing of the courses obj
  */
-class Pricing {
+export default class Pricing {
   /**
      *
      * @param {Number} amount
      * @param {Currency} currency
      */
   constructor(amount, currency) {
-    this._amount = amount;
-    this._currency = currency;
+    this.amount = amount;
+    this.currency = currency;
   }
 
   get amount() {
@@ -56,4 +56,4 @@ class Pricing {
     return amount * conversionRate;
   }
 }
-export default Pricing;
+
