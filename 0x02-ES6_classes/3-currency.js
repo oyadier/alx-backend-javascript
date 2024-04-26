@@ -1,4 +1,9 @@
 class Currency {
+    /**
+     * 
+     * @param {*} code 
+     * @param {*} name 
+     */
   constructor(code, name) {
     this._code = code;
     this._name = name;
