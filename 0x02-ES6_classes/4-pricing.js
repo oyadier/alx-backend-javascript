@@ -34,7 +34,7 @@ class Pricing {
  * @returns full display of course charges
  */
   displayFullPrice() {
-    return `${this.amount} ${this.currency.name} (${this.currency.code})`;
+    return `${this._amount} ${this._currency._name} (${this._currency._code})`;
   }
 
   /**
@@ -43,7 +43,7 @@ class Pricing {
  * @param {Number} conversionRate conversion rate
  * @returns converted price
  */
-  static converPrice(amount, conversionRate) {
+  static convertPrice(amount, conversionRate) {
     return amount * conversionRate;
   }
 }
