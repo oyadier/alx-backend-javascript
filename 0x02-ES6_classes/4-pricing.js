@@ -21,15 +21,15 @@ class Pricing {
     return this._currency;
   }
 
-  set amount(amount) {
-    if (typeof amount !== 'number') {
+  set amount(value) {
+    if (typeof value !== 'number') {
       throw new TypeError('Amount must be a number');
     }
-    this._amount = amount;
+    this._amount = value;
   }
 
-  set currency(currency) {
-    this._currency = currency;
+  set currency(curr) {
+    this._currency = curr;
   }
 
   /**
@@ -37,7 +37,7 @@ class Pricing {
  * @returns full display of course charges
  */
   displayFullPrice() {
-    return `${this._amount} ${this._currency._name} (${this._currency._code})`;
+    return `${this.amount} ${this.currency.name} (${this._currency.code})`;
   }
 
   /**
