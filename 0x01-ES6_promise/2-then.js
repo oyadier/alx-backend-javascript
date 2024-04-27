@@ -1,5 +1,5 @@
 function handleResponseFromAPI(promise) {
-  return new Promise((resolve, reject) => {
+  new Promise((resolve, reject) => {
     resolve({
       status: 200,
       body: 'success',
