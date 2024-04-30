@@ -10,7 +10,7 @@ function getListStudentIds(studentList) {
   if (!Array.isArray(studentList)) {
     return [];
   }
-
+studentList.
   return studentList.map((student) => student.id);
 }
 export default getListStudentIds;
