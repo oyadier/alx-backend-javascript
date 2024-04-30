@@ -7,6 +7,6 @@
 
 function getListStudentLocation(studentList, city) {
   return studentList.filter((students) => students.location === city);
-  studentList.reduce()
+
 }
 export default getListStudentLocation;

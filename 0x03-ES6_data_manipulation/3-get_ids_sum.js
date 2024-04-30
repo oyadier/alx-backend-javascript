@@ -8,5 +8,4 @@ function getListStudentIdsSum(studentList) {
 
   return sum;
 }
-
 export default getListStudentIdsSum;
