@@ -1,4 +1,7 @@
 function updateUniqueItems(maps) {
+  if (!(maps instanceof Map)) {
+    throw new Error('Cannot process');
+  }
   for (const entries of maps.entries()) {
     const [key, value] = entries;
     if (value === 1) {
