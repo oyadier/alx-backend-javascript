@@ -1,9 +1,9 @@
 /**
- * 
- * @param {Number} length 
- * @param {*Number} position 
- * @param {Number} value 
- * @returns 
+ *
+ * @param {Number} length
+ * @param {*Number} position
+ * @param {Number} value
+ * @returns
  */
 
 function createInt8TypeArray(length, position, value) {
