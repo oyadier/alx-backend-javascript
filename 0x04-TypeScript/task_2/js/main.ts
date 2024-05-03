@@ -43,3 +43,23 @@ function createEmployee(salary:any):Director | Teacher{
         }else
     return new Director;
 }
+
+
+function isDirector(employee:any):boolean {
+
+return (employee instanceof Director)
+}
+
+function executework(employee:any){
+    if (employee instanceof Director)
+        {
+            employee.workDirectorTasks();
+        }
+        if (employee instanceof Teacher)
+            {
+                employee.workTeacherTasks();
+            }  
+
+}
+
+let Student: 'Math' | 'History'
