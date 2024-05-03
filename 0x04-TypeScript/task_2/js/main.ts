@@ -62,4 +62,17 @@ function executework(employee:any){
 
 }
 
-let Student: 'Math' | 'History'
+type Subjects = 'Math' | 'History';
+
+
+function teachClass(todayClass:Subjects):string{
+
+    if (todayClass === 'Math'){
+        return 'Teaching Math';
+    }
+    if (todayClass === 'History'){
+        
+         return 'Teaching History'
+    }
+   
+}
