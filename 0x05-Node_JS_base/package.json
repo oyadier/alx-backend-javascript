@@ -7,6 +7,7 @@
     "lint": "./node_modules/.bin/eslint",
     "check-lint": "lint [0-9]*.js",
     "test": "jest",
+     "full-test": "jest --coverage --runInBand",
     "dev": "nodemon --exec babel-node --presets babel-preset-env ./server.js ./database.csv"
   },
   "author": "",
