@@ -1,8 +1,13 @@
-const { callbackify } = require('util');
 const fs = require('fs');
 const csv = require('csv-parser');
 
 function countStudents(dbpath) {
+  if (!fs.existsSync(dbpath)) {
+    throw new Error('Cannot load the database');
+  }
+  if (!fs.statSync(dbpath).isFile()) {
+    throw new Error('Cannot load the database');
+  }
   const results = [];
   fs.createReadStream(dbpath)
     .pipe(csv())
@@ -20,9 +25,6 @@ function countStudents(dbpath) {
       } catch (error) {
         throw new Error('Error processing the data:', error.message);
       }
-    })
-    .on('error', (error) => {
-      callbackify(new Error(`Cannot load the database:${error.message}`));
     });
 }
 
