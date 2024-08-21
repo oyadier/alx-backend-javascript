@@ -5,7 +5,7 @@ const HOST = '127.0.0.1';
 
 const app = htp.createServer();
 app.on('request', (req, res) => {
-  const message = 'Hello Holberton Schoolss!';
+  const message = 'Hello Holberton School!';
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
   res.setHeader('X-Powered-By', 'NodeJS');
