@@ -6,4 +6,5 @@ describe("calculateNumber", () => {
     it("Integer and floating point", () => assert.equal(calculateNumber(2, 3.3), 5))
     it("Round float value", () => assert.equal(calculateNumber(4, 3.7), 8))
     it ("Round floating value",() => assert.deepEqual(calculateNumber(2, 3.7), 6))
+    it("Two flaoting points", () => assert.equal(calculateNumber(1.4, 3.5), 5))
 })
