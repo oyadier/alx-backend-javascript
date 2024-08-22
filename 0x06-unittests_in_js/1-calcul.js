@@ -9,7 +9,7 @@ function calculateNumber(type, a, b) {
         if (Math.round(b) === 0){
             return "Error"
         }
-        result = result = Math.round(a) - Math.round(b);
+        result = result = Math.round(a) / Math.round(b);
     }
 
     return result;
